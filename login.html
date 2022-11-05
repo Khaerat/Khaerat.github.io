@@ -20,7 +20,17 @@
                 <label for="username/email">Username/Email:</label><br>
                 <input type="text" id="username/email" name=""><br><br>
                 <label for="pwd">Password:</label><br>
-                <input type="password" id="pwd" name="pwd"><br><br>
+                <input aria-describedby="passwordrules" id="password" type="password" />
+                <div hidden role="tooltip" id="passwordrules">
+                <p>
+                    Password Rules:
+                </p>
+                <ul>
+                    <li> Minimum of 8 characters</li>
+                    <li> Include at least one lowercase letter, one uppercase letter, one number and one special character</li>
+                    <li>Unique to this website</li>
+                </ul><br>
+                </div><br>
                 <a href="submit.html" class="btn">Submit</a>
                 <input type="reset">
             </form>
